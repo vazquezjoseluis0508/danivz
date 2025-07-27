@@ -2,7 +2,7 @@ import { Phone, MapPin, Star } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="inicio" className="bg-gradient-to-br from-blue-600 via-blue-700 to-green-600 text-white py-20">
+    <section id="inicio" className="bg-gradient-to-br from-blue-400 via-blue-500 to-cyan-400 text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -26,7 +26,7 @@ const Hero = () => {
             {/* Info Cards */}
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <MapPin className="h-6 w-6 text-green-300" />
+                <MapPin className="h-6 w-6 text-cyan-200" />
                 <div>
                   <p className="font-semibold">Avenida San Martín Norte 849</p>
                   <p className="text-sm text-blue-100">General Pico - La Pampa, Argentina</p>
@@ -34,7 +34,7 @@ const Hero = () => {
                     href="https://maps.google.com/?q=Avenida+San+Martín+Norte+849,+General+Pico,+La+Pampa,+Argentina"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-green-300 hover:text-green-100 underline"
+                    className="text-sm text-cyan-200 hover:text-cyan-100 underline"
                   >
                     Ver en Google Maps
                   </a>
@@ -53,7 +53,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contacto"
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-center transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-lg font-semibold text-center transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Solicitar Presupuesto
               </a>
@@ -77,8 +77,8 @@ const Hero = () => {
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-green-400 rounded-full opacity-20 blur-xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400 rounded-full opacity-20 blur-xl"></div>
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-cyan-300 rounded-full opacity-15 blur-xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-300 rounded-full opacity-15 blur-xl"></div>
           </div>
         </div>
       </div>

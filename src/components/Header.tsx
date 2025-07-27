@@ -14,7 +14,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-blue-600">
+            <div className="text-2xl font-bold text-blue-500">
               DANIVZ
             </div>
             <div className="ml-2 text-sm text-gray-600 hidden sm:block">
@@ -24,22 +24,22 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#inicio" className="text-gray-700 hover:text-blue-500 transition-colors font-medium">
               Inicio
             </a>
-            <a href="#servicios" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#servicios" className="text-gray-700 hover:text-blue-500 transition-colors font-medium">
               Mis Servicios
             </a>
-            <a href="#trabajos" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#trabajos" className="text-gray-700 hover:text-blue-500 transition-colors font-medium">
               Mis Trabajos
             </a>
-            <a href="#contacto" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+            <a href="#contacto" className="text-gray-700 hover:text-blue-500 transition-colors font-medium">
               Contacto
             </a>
           </nav>
 
           {/* Phone Number */}
-          <div className="hidden md:flex items-center space-x-2 text-blue-600">
+          <div className="hidden md:flex items-center space-x-2 text-blue-500">
             <Phone className="h-5 w-5" />
             <span className="font-semibold">2302-693788</span>
           </div>
