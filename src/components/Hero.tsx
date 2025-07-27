@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="/tecnico_herramientas.jpg"
+                src="./tecnico_herramientas.jpg"
                 alt="Carlos Daniel Vázquez - Técnico especializado"
                 className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
               />

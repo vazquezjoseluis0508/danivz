@@ -6,32 +6,32 @@ const Gallery = () => {
 
   const works = [
     {
-      src: "/instalacion_aire_acondicionado.webp",
+      src: "./instalacion_aire_acondicionado.webp",
       title: "Instalación de Aire Acondicionado",
       description: "Instalación profesional de equipo split en dormitorio, con conexiones eléctricas y refrigerantes según normas técnicas."
     },
     {
-      src: "/reparacion_aire_acondicionado.jpg",
+      src: "./reparacion_aire_acondicionado.jpg",
       title: "Reparación de Aire Acondicionado",
       description: "Reparación completa de unidad condensadora, incluyendo limpieza de filtros y verificación de sistema."
     },
     {
-      src: "/reparacion_lavadora.jpg",
+      src: "./reparacion_lavadora.jpg",
       title: "Reparación de Lavadora",
       description: "Servicio técnico especializado en lavadoras automáticas, diagnóstico y reparación de componentes internos."
     },
     {
-      src: "/servicio_electricidad.jpg",
+      src: "./servicio_electricidad.jpg",
       title: "Instalación Eléctrica",
       description: "Instalación de tablero eléctrico con protección diferencial y llaves termomagnéticas de primera calidad."
     },
     {
-      src: "/mantenimiento_electrodomesticos.jpg",
+      src: "./mantenimiento_electrodomesticos.jpg",
       title: "Mantenimiento Preventivo",
       description: "Mantenimiento preventivo de electrodomésticos para asegurar su óptimo funcionamiento y prolongar su vida útil."
     },
     {
-      src: "/tecnico_herramientas.jpg",
+      src: "./tecnico_herramientas.jpg",
       title: "Herramientas Profesionales",
       description: "Utilizo herramientas profesionales de última generación para garantizar trabajos de calidad y precisión."
     }

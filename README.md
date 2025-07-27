@@ -59,6 +59,11 @@ npm run build
 npm run preview
 ```
 
+### 6. Desplegar en GitHub Pages
+```bash
+npm run deploy
+```
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -133,6 +138,7 @@ danivz/
 - `npm run dev` - Inicia el servidor de desarrollo
 - `npm run build` - Construye la aplicación para producción
 - `npm run preview` - Previsualiza la versión de producción
+- `npm run deploy` - Despliega la aplicación en GitHub Pages
 - `npm run lint` - Ejecuta el linter para verificar el código
 
 ## 📞 Información de Contacto
@@ -213,6 +219,25 @@ Para contribuir al proyecto:
 3. Commit tus cambios (`git commit -am 'Agregar nueva funcionalidad'`)
 4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
 5. Abre un Pull Request
+
+## 🚀 Despliegue en GitHub Pages
+
+El sitio web está desplegado automáticamente en GitHub Pages. Para hacer un nuevo deploy:
+
+1. **Hacer cambios** en el código
+2. **Commit y push** a GitHub:
+   ```bash
+   git add .
+   git commit -m "Descripción de los cambios"
+   git push
+   ```
+3. **Ejecutar deploy**:
+   ```bash
+   npm run deploy
+   ```
+
+### 🌐 URL del sitio desplegado
+- **GitHub Pages**: https://vazquezjoseluis0508.github.io/danivz/
 
 ## 📄 Licencia
 
