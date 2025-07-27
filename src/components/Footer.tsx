@@ -49,8 +49,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-green-400" />
                 <div>
-                  <p className="text-gray-300">General Pico - La Pampa</p>
-                  <p className="text-sm text-gray-400">y zonas de influencia</p>
+                  <p className="text-gray-300">Avenida San Martín Norte 849</p>
+                  <p className="text-gray-300">General Pico - La Pampa, Argentina</p>
+                  <a 
+                    href="https://maps.google.com/?q=Avenida+San+Martín+Norte+849,+General+Pico,+La+Pampa,+Argentina"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-400 hover:text-blue-300 underline"
+                  >
+                    Ver en Google Maps
+                  </a>
                 </div>
               </div>
               

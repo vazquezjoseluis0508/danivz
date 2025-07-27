@@ -28,8 +28,16 @@ const Hero = () => {
               <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <MapPin className="h-6 w-6 text-green-300" />
                 <div>
-                  <p className="font-semibold">General Pico - La Pampa</p>
-                  <p className="text-sm text-blue-100">y zonas de influencia</p>
+                  <p className="font-semibold">Avenida San Martín Norte 849</p>
+                  <p className="text-sm text-blue-100">General Pico - La Pampa, Argentina</p>
+                  <a 
+                    href="https://maps.google.com/?q=Avenida+San+Martín+Norte+849,+General+Pico,+La+Pampa,+Argentina"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-green-300 hover:text-green-100 underline"
+                  >
+                    Ver en Google Maps
+                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">

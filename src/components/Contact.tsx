@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
+import emailjs from '@emailjs/browser'
+import { EMAILJS_CONFIG } from '../config/emailjs'
 
 interface FormData {
   name: string
@@ -87,13 +89,30 @@ const Contact = () => {
 
     setIsSubmitting(true)
     
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Configuración de EmailJS
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        from_phone: formData.phone,
+        message: formData.message,
+        to_name: 'Carlos Daniel Vázquez',
+        reply_to: formData.email,
+      }
+
+      // Enviar email usando EmailJS
+      await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        templateParams,
+        EMAILJS_CONFIG.PUBLIC_KEY
+      )
+
       setIsSubmitted(true)
       setFormData({ name: '', phone: '', email: '', message: '' })
     } catch (error) {
       console.error('Error submitting form:', error)
+      alert('Error al enviar el mensaje. Por favor, intenta nuevamente o contacta por WhatsApp.')
     } finally {
       setIsSubmitting(false)
     }
@@ -165,8 +184,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Ubicación</h4>
-                    <p className="text-gray-600">General Pico - La Pampa</p>
-                    <p className="text-sm text-gray-500">y zonas de influencia</p>
+                    <p className="text-gray-600">Avenida San Martín Norte 849</p>
+                    <p className="text-gray-600">General Pico - La Pampa, Argentina</p>
+                    <a 
+                      href="https://maps.google.com/?q=Avenida+San+Martín+Norte+849,+General+Pico,+La+Pampa,+Argentina"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-blue-600 hover:text-blue-800 underline"
+                    >
+                      Ver en Google Maps
+                    </a>
                   </div>
                 </div>
 
