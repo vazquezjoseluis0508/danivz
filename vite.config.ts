@@ -13,6 +13,7 @@ export default defineConfig({
       includeProps: true,
     })
   ],
+  base: '/danivz/', // Base path para GitHub Pages
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
